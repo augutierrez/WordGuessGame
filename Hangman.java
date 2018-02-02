@@ -14,7 +14,7 @@ import java.lang.*;
 
 public class Hangman 
 {
-
+	//This is an array of Strings
 	static String movieList[] = {"Star Wars: The Last Jedi","The Matrix","Avatar"}; 
 	// add more to this list by adding more String Literals separated by commas
 
@@ -32,6 +32,9 @@ public class Hangman
 		StringBuilder currentGuess = new StringBuilder(movieList[0].length());
 		System.out.println(movieList[0]);
 		
-
+		String movie = movieList[0];
+		char c = movie.charAt(0);
+		if(Character.isLetter(c))
+			System.out.println(c + " is a letter");
 	}
 }
